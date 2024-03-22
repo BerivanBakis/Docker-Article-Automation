@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+         <svg class="line-top" width="750" height="15" viewbox="0,0 1000,20">
+          <line
+           class="line-dash"
+           x1="0"
+           y1="15"
+           x2="1000"
+           y2="15"
+           style="stroke: transparent; stroke-width:2; stroke-linecap:round; stroke-dasharray: 180,1200; stroke-dashoffset: -35;"
+          />
+         </svg>
+         <ul>
+          <a href="index.html"><li>Home</li></a><a href="my_own_articles.html"><li>My Articles</li></a><a href="#"><li>Contact</li></a><a href="#"><li>About</li></a>
+         </ul>
+         <svg class="line-bottom" width="750" height="30" viewbox="0,0 1000,40">
+          <polygon class="lb" points="35,53 115,53 125,43 135,53 215,53" />
+          <polygon class="lb" points="285,53 365,53 375,43 385,53 465,53" />
+       
+          <polygon class="lb" points="535,53 615,53 625,43 635,53 715,53" />
+       
+          <polygon class="lb" points="785,53 865,53 875,43 885,53 965,53" />
+         </svg>
+        </div>
+       </div>
+      
+       
+       <div class="add-article-container">  
+        <form id="contact" action="#" method="post">
+          <h3>Adding an Article</h3>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your article here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Add</button>
+          </fieldset>
+        </form>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

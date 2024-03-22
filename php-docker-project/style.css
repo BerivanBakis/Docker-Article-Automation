@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font: 400 10px "Lato", sans-serif;
+	text-align: center;
+    margin: 0;
+    background-color: #333;
+}
+
+.header {
+	width: 100%;
+	height: 75px;
+	background: #3c424d;
+	/* background: #474a50; */
+	opacity: 0.95;
+	overflow: hidden;
+	-webkit-box-shadow: #333 1px 3px 4px;
+	-moz-box-shadow: #333 1px 3px 4px;
+	box-shadow: #333 1px 3px 4px;
+}
+
+.menu {
+	width: 750px;
+	margin: 0 auto;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	margin: 0;
+	padding: 10px 0 10px 0;
+	width: 25%;
+	height: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 3.5px;
+	transition: all 0.5s ease-out;
+}
+
+li.active {
+	color: #4eb981;
+	transform: scale(1.1);
+}
+
+polygon {
+	stroke-width: 2px;
+	stroke: #4eb981;
+	fill: #4eb981;
+}
+
+@media (max-device-width: 991px) {
+	.header {
+		height: 64px;
+	}
+
+	body {
+		font-size: 0.4em;
+	}
+}
+
+.article-container {
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+}
+
+.card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: 0.7s;
+    z-index: 1;
+}
+.card .icon h1{
+    max-width: 80%;
+    max-height: 90%;
+    overflow: hidden;
+    margin: 10px auto;
+    color: #ffffff;
+	font: 400 15px "Lato", sans-serif;
+	text-align: center;
+}
+.card:nth-child(1) .icon {
+    background: #e07768;
+}
+
+.card:nth-child(2) .icon {
+    background: #6eadd4;
+}
+
+.card:nth-child(3) .icon {
+    background: #4aada9;
+}
+
+.card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.card:hover .face.face1 {
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.card .face.face1 .content i {
+    max-width: 100px;
+}
+
+.card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+	font: 600 20px "Lato", sans-serif;
+    text-align: center;
+    color: #414141;
+}
+
+a {
+    text-decoration: none;
+    color: #414141;
+}
+
+
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    width: 100px;
+    height: 35px;
+	font: 400 10px "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+    }
+  
+  .button:hover {
+    background-color: #4eb981;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  .button.delete:hover {
+    background-color: red;
+}
+.button.update:hover {
+    background-color: orange;
+}
+
+
+
+.add-article-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  
+  #contact input[type="text"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  }
+  
+  #contact {
+    background: #4eb981;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 50px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact textarea {
+    width: 90%;
+    border: 1px solid #ccc;
+    background: #dddddd;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 500px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 30%;
+    border: none;
+    background: #3e9668;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background: #2e6e4d;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+  
+  :-moz-placeholder {
+    color: #888;
+  }
+  
+  ::-moz-placeholder {
+    color: #888;
+  }
+  
+  :-ms-input-placeholder {
+    color: #888;
+  }
+
+
+.article-details-container{
+    max-width: 60%;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 30px;
+    line-height: 1.5; 
+    font-size: 18px;
+    text-align: justify;
+    background-color: #ffffffa9;
+}
