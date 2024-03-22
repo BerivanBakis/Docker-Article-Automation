@@ -314,7 +314,7 @@ a {
     cursor: pointer;
     width: 30%;
     border: none;
-    background: #3e9668;
+    background: #2a6949;
     color: #FFF;
     margin: 0 0 5px;
     padding: 10px;
@@ -360,13 +360,82 @@ a {
   }
 
 
-.article-details-container{
-    max-width: 60%;
-    margin: 50px auto;
+.article-details{
+    min-width: 700px;
+    width: 50%;
+    margin: 50px 25px 50px 50px;
     border-radius: 5px;
     padding: 30px;
     line-height: 1.5; 
     font-size: 18px;
     text-align: justify;
-    background-color: #ffffffa9;
+    background-color: #3e966863;
+    color: #181818;
+    height: 1000px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.article-details h1{
+	font: 600 22px "Lato", sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.article-details-container{
+    display: flex;
+    flex-direction: row;
+}
+.comments-container{
+    margin: 75px 25px 50px 50px;
+    line-height: 1; 
+    text-align: left;
+    font-size: 17px;
+    width: 80%;
+}
+
+.comments-container h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #3e6878;
+}
+
+.comments{
+  margin-bottom: 50px;
+}
+
+.log-form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.log-form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3e6878;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.log-form button:hover,.log-form button:active,.log-form button:focus {
+  background: #43A047;
+}
+
+
+.log-form textarea{
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f2f2f2;
 }
